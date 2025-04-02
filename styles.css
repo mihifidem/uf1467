@@ -1,0 +1,16 @@
+body {
+    backgroud-color: #fefefe;
+    
+    color: #333
+    
+    font-family: Arial, sans-serif
+    
+    margin: 0 px
+  }
+  
+  .contenedor {
+    border 1px solid #000;
+    paddding: 10px;
+    text-align: center;
+  }
+  
