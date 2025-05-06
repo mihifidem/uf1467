@@ -1,0 +1,88 @@
+<%- include('partials/header') %>
+
+  <h2 class="mb-4 text-primary">Añadir empleado</h2>
+
+
+  <!-- Formulario para añadir nuevo empleado -->
+  <div class="card shadow">
+    <div class="card-body">
+      <h5 class="card-title">Añadir nuevo empleado</h5>
+      <form action="/empleados/add" method="POST" class="row g-3 mt-3">
+        <div class="col-md-4">
+          <label for="dni" class="form-label">DNI</label>
+          <input type="text" name="dni" id="dni" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" name="direccion" id="direccion" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="cp" class="form-label">CP</label>
+          <input type="text" name="cp" id="cp" class="form-control">
+        </div>
+
+        <div class="col-md-4">
+          <label for="direccion" class="form-label">Población</label>
+          <input type="text" name="poblacion" id="poblacion" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="provincia" class="form-label">Provincia</label>
+          <input type="text" name="provincia" id="provincia" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="telf" class="form-label">Teléfono</label>
+          <input type="text" name="telf" id="telf" class="form-control">
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-12">
+          <label for="iban" class="form-label">IBAN</label>
+          <input type="text" name="iban" id="iban" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label for="genero" class="form-label"><strong>Género</strong></label><br>
+          <input type="radio" id="masculino" name="genero" value="masculino">
+          <label for="masculino">Masculino</label><br>
+
+          <input type="radio" id="femenino" name="genero" value="femenino">
+          <label for="femenino">Femenino</label><br>
+
+          <input type="radio" id="otro" name="genero" value="otro">
+          <label for="otro">Otro</label><br>
+        </div>
+        <div class="col-md-3">
+          <label for="ec" class="form-label"><strong>Estado Civil</strong></label><br>
+          <input type="radio" id="casado" name="ec" value="casado">
+          <label for="casado">Casado</label><br>
+
+          <input type="radio" id="soltero" name="ec" value="soltero">
+          <label for="Soltero">Soltero</label><br>
+
+          <input type="radio" id="Otro" name="ec" value="otro">
+          <label for="otro">Otro</label><br>
+        </div>
+        <div class="col-md-3">
+          <label for="hijos" class="form-label"><strong>Nº hijos/as</strong></label>
+          <input type="number" name="hijos" id="hijos" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label for="f_nac" class="form-label"><strong>F. Nacimiento</strong></label>
+          <input type="date" name="f_nac" id="f_nac" class="form-control">
+        </div>
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-success">Crear</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>

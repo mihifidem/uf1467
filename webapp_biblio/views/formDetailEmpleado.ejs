@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+  <h2 class="mb-4 text-primary">Añadir empleado</h2>
+
+
+  <!-- Formulario para añadir nuevo empleado -->
+  <div class="card shadow">
+    <div class="card-body">
+      <h5 class="card-title">Detalle empleado</h5>
+      <p><strong>DNI-</strong> <p><%= empleado.dni %></p> </p>
+      <p><strong>Nombre-</strong> <p><%= empleado.nombre %></p> </p>
+      <p><strong>email-</strong> <p><%= empleado.email %></p> </p>
+      <p><strong>Dirección-</strong> <p><%= empleado.direccion %></p> </p>
+      <p><strong>CP-</strong> <p><%= empleado.cp %></p> </p>
+      <p><strong>Población-</strong> <p><%= empleado.poblacion %></p> </p>
+      <p><strong>Provincia-</strong> <p><%= empleado.provincia %></p> </p>
+      <p><strong>IBAN-</strong> <p><%= empleado.iban %></p> </p>
+      <p><strong>Genero-</strong> <p><%= empleado.genero %></p> </p>
+      <p><strong>EC-</strong> <p><%= empleado.estado_civil %></p> </p>
+      <p><strong>Nº Hijos/as-</strong> <p><%= empleado.hijos %></p> </p>
+      <p><strong>F.Nacimiento-</strong> <p><%= empleado.f_nacimiento %></p> </p>
+
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
